@@ -1,0 +1,23 @@
+<div container mt-5>
+    <div class="row g-3 mt-2">
+        <div *ngFor="let autos of MARCA  "class="col-3">
+            <div class="card">
+                <img src="{{autos.img}}" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-title">{{autos.nombre}}</p>
+                    <div> <p class="card-text">{{autos.info}} </p></div>
+                    <div>
+                        <div class="subtituloo">
+
+                            <b class="mt-1">Fecha de lanzamiento</b>
+                        </div>
+                        <p class="fechas mt-0" style="border:1px solid  rgb(240, 238, 238) ;" >{{autos. fecha | date: ('25/9/yy')}} </p>
+                        <div class="botonn">
+                            <a  href="../../components/content/content.component.html" class=" btn btn-primary ">  Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
